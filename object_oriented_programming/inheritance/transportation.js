@@ -44,6 +44,7 @@ class ElectricCar extends Car {
 }
 
 const audi = new Car("Audi", 70, "BloEthanol");
+console.log("Audi : ", audi);
 const BMW = new ElectricCar("BWW", 100, 200);
 
 BMW.move();
