@@ -8,6 +8,7 @@ export default {
       nuredin: path.resolve(__dirname, "./src/json"),
     },
   },
+  envPrefix: "NUREDIN",
   publicDir: "public",
   plugins: [Inspect()],
   esbuild: {
