@@ -31,9 +31,14 @@ class ElectricCar extends Car {
     this.battryCapacity = battryCapacity;
   }
 
-  charge() {
+  reFuel() {
     console.log(
       `'${this.name}' Charging With Capacity '${this.battryCapacity}' kWH`
+    );
+  }
+  move() {
+    console.log(
+      `'${this.name}' Move Silently At '${this.speed}' Because It is Electric Car After All !!`
     );
   }
 }
@@ -43,6 +48,5 @@ const BMW = new ElectricCar("BWW", 100, 200);
 
 BMW.move();
 BMW.stop();
-BMW.charge();
 BMW.reFuel();
 BMW.move();
