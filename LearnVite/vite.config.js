@@ -1,14 +1,15 @@
 import Inspect from "vite-plugin-inspect";
-import checker from "vite-plugin-checker";
+import path from "path";
 
 export default {
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src/assets/images"),
+      nuredin: path.resolve(__dirname, "./src/json"),
+    },
+  },
   publicDir: "public",
-  plugins: [
-    Inspect(),
-    checker({
-      typescript: true,
-    }),
-  ],
+  plugins: [Inspect()],
   esbuild: {
     jsxFactory: "create",
     jsxInject: "import { create } from '/src/jsx/create.js'",
