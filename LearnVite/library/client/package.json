@@ -1,0 +1,22 @@
+{
+  "name": "plunk",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/plunk.umd.cjs",
+  "module": "./dist/plunk.js",
+  "exports": {
+    ".": {
+      "import": "./dist/plunk.js",
+      "require": "./dist/plunk.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.1"
+  }
+}
