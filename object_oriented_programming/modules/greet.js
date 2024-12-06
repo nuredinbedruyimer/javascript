@@ -1,5 +1,10 @@
-const greet = (name) => {
-  return `Hi, '${name}' `;
+const sayHey = (name) => {
+  return `Hey, '${name}' `;
+};
+const sayBye = (name) => {
+  return `Bey, '${name}' `;
 };
 
-export default greet;
+export default sayBye;
+
+export { sayHey };
