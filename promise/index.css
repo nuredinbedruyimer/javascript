@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+h1,
+h3 {
+  text-align: center;
+}
+
+#app {
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 90%;
+
+  margin: auto;
+  margin-top: 2rem;
+  padding: 3rem;
+}
+img {
+  height: 300px;
+  width: 400px;
+  padding: 1rem;
+  border: 2px solid palevioletred;
+  border-radius: 6px;
+}
